@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/index.css">
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+        <title>OysterBath</title>
+    </head>
+    <body>
+        <!--header -->
+        <header class="header">
+            <div class="flex">
+                <a href="index.php"><h1 style="font-size: 2rem;">OYSTER BATH</h1></a>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="view_products.html">Products</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            
+                <div clas="icons">
+                    <!--
+                    <i class="bx bxs-user" id="user-btn"></i>
+                    <a href="wishlist.php" class="cart-btn"><i class="bx bx-heart"></i><sup>0</sup></a>
+                    <a href="cart.php" class="cart-btn"><i class="bx bx-cart"></i><sup>0</sup></a>
+                    -->
+                    <i class="bx bx-list-plus" id="menu-btn" style="font-size: 2rem;"></i>
+                </div>
+               <!-- <div class="user-box">
+                    <p>username : <span><?php //echo $_SESSION['user_name']; ?></span></p>
+                    <p>email : <span><?php //echo $_SESSION['user_email']; ?></span></p>
+                    <a href="login.php" class="btn">login</a>
+                    <a href="register.php" class="btn">register</a>
+                    <form method="post">
+                        <button type="submit" name="logout" class="logout-btn">log out</button>
+                    </form>
+                </div> -->
+            </div>
+        </header>
+        
+        <div class="main">    
+        <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="IMG/f1.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3>Dream. Design. Delight: Make Your Bathroom Shine!</h3>
+            </div>   
+            </div>
+            <div class="carousel-item">
+            <img src="IMG/f2.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3>Crafting Comfort: The Art of Bathroom Elegance!</h3>
+            </div>   
+            </div>
+            <div class="carousel-item">
+            <img src="IMG/f3.jpg" alt="New York">
+            <div class="carousel-caption">
+                <h3>Function Meets Fabulous: Bathrooms Reimagined!</h3>
+            </div>   
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>
+                <!--   
+                <section class="home-section">
+                <div class="slider">
+                        <div class="slider__slider slide1">
+                            <div class="overlay"></div>
+                            <div class="slide-detail">
+                                <h1>Transform Your Space, Refresh Your Routine!</h1>
+                                <a href="view_products.php" class="btn">shop now</a>
+                            </div>
+                            <div class="hero-dec-top"></div>
+                            <div class="hero-dec-top"></div>
+                        </div>
+                        <!-- slide end 
+
+                        <div class="slider__slider slide2">
+                            <div class="overlay"></div>
+                            <div class="slide-detail">
+                                <h1>Elevate Your Comfort, <br>One Bathroom at a Time!</h1>
+                                <a href="view_products.php" class="btn">shop now</a>
+                            </div>
+                            <div class="hero-dec-top"></div>
+                            <div class="hero-dec-top"></div>
+                        </div>
+                        <!-- slide end 
+
+                        <div class="slider__slider slide3">
+                            <div class="overlay"></div>
+                            <div class="slide-detail">
+                                <h1>Where Style Meets Serenity: <br> Your Bathroom Oasis.</h1>
+                                <a href="view_products.php" class="btn">shop now</a>
+                            </div>
+                            <div class="hero-dec-top"></div>
+                            <div class="hero-dec-top"></div>
+                        </div>
+                        <!-- slide end 
+                        <!--
+                        <div class="left-arrow"><i class="bx bxs-left-arrow"></i></div>
+                        <div class="right-arrow"><i class="bx bxs-right-arrow"></i></div>
+                    </div>
+                </section>-->
+                
+                <!-- home slider end -->
+            <!-- <section class="thumb">
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="IMG/thumb2.jpg">
+                            <h3>green tea</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <i class="bx bx-chevron-right"></i>
+                        </div>
+
+                        <div class="box">
+                            <img src="IMG/thumb0.jpg">
+                            <h3>green tea</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <i class="bx bx-chevron-right"></i>
+                        </div>
+
+                        <div class="box">
+                            <img src="IMG/thumb1.jpg">
+                            <h3>green tea</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <i class="bx bx-chevron-right"></i>
+                        </div>
+
+                        <div class="box">
+                            <img src="IMG/thumb.jpg">
+                            <h3>green tea</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <i class="bx bx-chevron-right"></i>
+                        </div>
+                    </div>
+                </section>
+        <!--
+                <section class="container">
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="IMG/f4.jpg">
+                        </div>  
+                    <!-- <div class="box">
+                            <img src="IMG/download.png">
+                            <span>Innovative Designs for Everyday Luxury.</snap>
+                            <h1>save up to 50% off</h1>
+                        </div>
+                    </div>
+                </section>-->
+
+                <section class="shop">
+                    <div class="title">
+                        <img src="IMG/download.png">
+                        <h1>Tranding Products</h1>
+                    </div>
+                <!-- <div class="row">
+                        <img src="IMG/f7.jpg">
+                        <div class="row-details">
+                            <img src="IMG/f8.jpg">
+                            <div class="top-footer">
+                                <h1>a cup of green tea makes you healthy</h1>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div class="container">
+                        <div class="grid">
+                        <div class="category">
+                        <button>
+                        <a href="view_products.php"><img src="IMG/f4.jpg" alt="Category 1"></a>
+                            <span>Water Tap</span>
+                        </button>
+                    </div>
+                    <div class="category">
+                        <button>
+                            <a href="view_products.php"><img src="IMG/soap dispenser.webp" alt="Category 2"></a>
+                            <span>Soap Dispenser for Bathroom</span>
+                        </button>
+                    </div>
+                    <div class="category">
+                        <button>
+                        <a href="view_products.php"> <img src="IMG/bath_product_categories.webp" alt="Category 3"></a>
+                            <span>Bathroom Shower</span>
+                        </button>
+                    </div>
+                    <div class="category">
+                        <button>
+                        <a href="view_products.php"><img src="IMG/RoundFoldableTowelRack.webp" alt="Category 4"></a>
+                            <span>Towel Rack</span>
+                        </button>
+                    </div>
+                    <div class="category">
+                        <button>
+                        <a href="view_products.php"><img src="IMG/wash basin.webp" alt="Category 5"></a>
+                            <span>Wash Basin</span>
+                        </button>
+                    </div>
+                    <div class="category">
+                        <button>
+                        <a href="view_products.php"> <img src="IMG/toylet.webp" alt="Category 6"></a>
+                            <span>Commode for Toilet</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+                </section>
+
+            <!-- <section class="shop-cetagory">
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="IMG/f5.jpg">
+                            <div class="detail">
+                                <span>BIG OFFERS</span>
+                                <h1>Extra 15% Off</h1>
+                                <a href="view_products.php" class="btn">shop now</a>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="IMG/f6.jpg">
+                            <div class="detail">
+                                <span>NEW IN TASTE</span>
+                                <h1>Coffee House</h1>
+                                <a href="view_products.php" class="btn">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+
+                <section class="services">
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="IMG/icon2.png">
+
+                            <div class="detail">
+                                <h3>great savings</h3>
+                                <p>save big every order</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="IMG/icon1.png">
+                            <div class="detail">
+                                <h3>24*7 support</h3>
+                                <p>one-on-one support</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="IMG/icon0.png">
+                            <div class="detail">
+                                <h3>gift vouchers</h3>
+                                <p>vouchers on every fastivals</p>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="IMG/icon.png">
+                            <div class="detail">
+                                <h3>worlwide delivery</h3>
+                                <p>dorship worlwide delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        <!--
+                <section class="brand">
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="IMG/brand (1).jpg">
+                        </div>
+                        <div class="box">
+                            <img src="IMG/brand (2).jpg">
+                        </div>
+                        <div class="box">
+                            <img src="IMG/brand (3).jpg">
+                        </div>
+                        <div class="box">
+                            <img src="IMG/brand (4).jpg">
+                        </div>
+                        <div class="box">
+                            <img src="IMG/brand (5).jpg">
+                        </div>
+                    </div>
+                </section>-->
+                
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Oyster<span>Bath</span></h3>
+    
+        <p class="footer-links">
+            <a href="index.php">Home</a>
+            |
+            <a href="about.php">About</a>
+            |
+            <a href="contact.php">Contact</a>
+            |
+            <a href="view_products.php">Products</a>
+        </p>
+    
+        <p class="footer-company-name">Copyright © 2024 <strong>OysterBath</strong> All rights reserved</p>
+    </div>
+    
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Andheri West</span>Mumbai, Maharashtra 400053</p>
+        </div>
+    
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 70285 11556</p>
+    </div>
+    </div>
+    
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+    </footer>
+</div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+                <script src="js/script.js"></script>
+    </body>
+</html>
